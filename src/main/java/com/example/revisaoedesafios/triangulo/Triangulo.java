@@ -1,4 +1,4 @@
-package com.example.revisaoedesafios.calculadora;
+package com.example.revisaoedesafios.triangulo;
 
 import java.util.Scanner;
 
