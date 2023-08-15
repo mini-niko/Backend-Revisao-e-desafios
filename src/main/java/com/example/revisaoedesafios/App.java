@@ -1,5 +1,6 @@
 package com.example.revisaoedesafios;
 
+import com.example.revisaoedesafios.bancario.Banco;
 import com.example.revisaoedesafios.calculadora.Calculadora;
 import com.example.revisaoedesafios.quiz.Quiz;
 import com.example.revisaoedesafios.triangulo.Triangulo;
@@ -17,7 +18,8 @@ public class App {
                 .printf("Escolha quais das funções você deseja executar:\n\n" +
                         "1- Calculadora\n" +
                         "2- Triangulus 1.0\n" +
-                        "3- Quiz\n\n" +
+                        "3- Quiz\n" +
+                        "4- Banco\n\n" +
                         "Função escolhida: ");
 
         String funcao = scan.nextLine();
@@ -33,6 +35,8 @@ public class App {
             case "3":
                 Quiz.run();
                 break;
+            case "4":
+                Banco.run();
             default:
                 System.out.println("Nenhuma função escolhida.\n");
                 imprimirConsole();
